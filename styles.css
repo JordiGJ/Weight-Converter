@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(232, 218, 8);
+  background: -moz-linear-gradient(
+    to left top,
+    rgba(232, 218, 8, 1) 0%,
+    rgba(232, 218, 8, 1) 33%,
+    rgba(123, 210, 231, 1) 34%,
+    rgba(232, 218, 8, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    to left top,
+    rgba(232, 218, 8, 1) 0%,
+    rgba(123, 210, 231, 1) 35%,
+    rgba(232, 218, 8, 1) 100%
+  );
+  background: linear-gradient(
+    to left top,
+    rgba(232, 218, 8, 1) 0%,
+    rgba(123, 210, 231, 1) 35%,
+    rgba(232, 218, 8, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8da08",endColorstr="#e8da08",GradientType=1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  color: darkcyan;
+  text-align: left;
+}
+section {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 85%;
+  max-width: 450px;
+  background-color: hsla(60, 100%, 50%, 0.215);
+  opacity: 0.9;
+}
+h1 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+label {
+  color: darkcyan;
+  margin: 0.5rem 0;
+}
+input {
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 0.4rem;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  color: darkgreen;
+}
+p {
+  color: darkcyan;
+  margin: 0.5rem 0;
+}
+input:focus {
+  outline: none;
+}
+#error {
+  color: red;
+}
